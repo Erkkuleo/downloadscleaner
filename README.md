@@ -44,8 +44,7 @@ This Python script organizes files in the user's "Downloads" directory based on 
     ```
 
 3. Organizing Files
-
-    Moves files to their respective folders based on their categories.
+    Moves files to their  respective folders based on their categories.
     ```
     for file_ext, filesList in mapping.items():
         destination_folder = OTHER_FOLDER
@@ -62,7 +61,6 @@ This Python script organizes files in the user's "Downloads" directory based on 
             src_path = os.path.join(downDir, file)
             dest_path = os.path.join(path, destination_folder, file)
             os.rename(src_path, dest_path)
-
     ```
 ## Note
     Ensure that the necessary folders exist ('Videos', 'Pictures', 'Documents', 'Home', 'Music', 'Other') in the specified destination path.
